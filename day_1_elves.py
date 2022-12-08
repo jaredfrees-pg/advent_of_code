@@ -13,4 +13,8 @@ with open('input.txt') as file:
         else:
             one_elf_calories += int(line)
 
-print(max(elf_calorie_list))
+# print(max(elf_calorie_list))
+
+top_three = sorted(elf_calorie_list)[-3:]
+
+print(sum(top_three))
